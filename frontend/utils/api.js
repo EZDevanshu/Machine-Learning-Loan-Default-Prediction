@@ -1,7 +1,7 @@
 import { predictMockRisk } from './mockPrediction';
 import { DEFAULT_MODELS_COMPARISON } from '../data/mockData';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://loanguard-backend.onrender.com/api/v1';
 
 /**
  * Checks if the FastAPI backend service is reachable and healthy.
