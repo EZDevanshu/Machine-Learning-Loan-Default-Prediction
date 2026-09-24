@@ -1,0 +1,9 @@
+{
+  "name": "LoanGuard AI",
+  "short_name": "LoanGuard",
+  "description": "AI-Powered Loan Default Risk Assessment",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a"
+}

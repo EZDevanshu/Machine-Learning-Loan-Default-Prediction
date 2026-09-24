@@ -1,0 +1,155 @@
+{
+  "datasetSize": "255,347 Records Benchmarked",
+  "testSplit": "20% Holdout Partition (51,070 Validation Samples)",
+  "evaluatedAt": "2026-09-23T17:53:18.610747+00:00",
+  "bestModelId": "hist_gradient_boosting",
+  "bestModelName": "HistGradientBoosting",
+  "totalModels": 5,
+  "models": [
+    {
+      "id": "hist_gradient_boosting",
+      "name": "HistGradientBoosting",
+      "type": "Ensemble Gradient Boosting",
+      "description": "Scikit-Learn Histogram-based Gradient Boosting. Highly optimized tree splits with excellent ROC-AUC.",
+      "strengths": [
+        "Highest ROC-AUC",
+        "Fast convergence",
+        "Non-linear pattern recognition"
+      ],
+      "bestFor": "Default Production Engine (Institutional Grade)",
+      "accuracy": 0.8869,
+      "accuracyPercentage": "88.69%",
+      "rocAuc": 0.7568,
+      "precision": 0.619,
+      "recall": 0.0671,
+      "f1Score": 0.1211,
+      "logLoss": 0.3116,
+      "latencyMs": 0.01,
+      "trainDurationSeconds": 4.23,
+      "confusionMatrix": {
+        "true_negatives": 44894,
+        "false_positives": 245,
+        "false_negatives": 5533,
+        "true_positives": 398
+      },
+      "isBest": true,
+      "rank": 1
+    },
+    {
+      "id": "decision_tree",
+      "name": "Decision Tree",
+      "type": "Rule-Based Single Tree",
+      "description": "Single interpretable decision tree with pruned depth. Exposes clear sequential rules for loan approval.",
+      "strengths": [
+        "White-box transparency",
+        "Zero scaling dependency",
+        "Human-readable logic"
+      ],
+      "bestFor": "Regulatory compliance & customer explanations",
+      "accuracy": 0.8854,
+      "accuracyPercentage": "88.54%",
+      "rocAuc": 0.7252,
+      "precision": 0.6149,
+      "recall": 0.0361,
+      "f1Score": 0.0682,
+      "logLoss": 0.3234,
+      "latencyMs": 0.0,
+      "trainDurationSeconds": 2.55,
+      "confusionMatrix": {
+        "true_negatives": 45005,
+        "false_positives": 134,
+        "false_negatives": 5717,
+        "true_positives": 214
+      },
+      "isBest": false,
+      "rank": 2
+    },
+    {
+      "id": "logistic_regression",
+      "name": "Logistic Regression",
+      "type": "Linear Generalized Model",
+      "description": "Calibrated parametric linear classifier mapping standardized borrower features to default odds ratios.",
+      "strengths": [
+        "Sub-millisecond latency",
+        "Direct odds interpretation",
+        "Minimal memory footprint"
+      ],
+      "bestFor": "High-throughput real-time APIs",
+      "accuracy": 0.8853,
+      "accuracyPercentage": "88.53%",
+      "rocAuc": 0.7531,
+      "precision": 0.6084,
+      "recall": 0.0341,
+      "f1Score": 0.0645,
+      "logLoss": 0.3141,
+      "latencyMs": 0.0,
+      "trainDurationSeconds": 0.69,
+      "confusionMatrix": {
+        "true_negatives": 45009,
+        "false_positives": 130,
+        "false_negatives": 5729,
+        "true_positives": 202
+      },
+      "isBest": false,
+      "rank": 3
+    },
+    {
+      "id": "random_forest",
+      "name": "Random Forest",
+      "type": "Ensemble Bagging (80 Trees)",
+      "description": "Bootstrap aggregating ensemble of 80 deep decision trees. Minimizes variance and prevents overfitting.",
+      "strengths": [
+        "Extreme robustness",
+        "Low variance",
+        "Outlier resilience"
+      ],
+      "bestFor": "Stable risk underwriting & stress-testing",
+      "accuracy": 0.8846,
+      "accuracyPercentage": "88.46%",
+      "rocAuc": 0.7531,
+      "precision": 0.7778,
+      "recall": 0.0094,
+      "f1Score": 0.0187,
+      "logLoss": 0.316,
+      "latencyMs": 0.01,
+      "trainDurationSeconds": 9.83,
+      "confusionMatrix": {
+        "true_negatives": 45123,
+        "false_positives": 16,
+        "false_negatives": 5875,
+        "true_positives": 56
+      },
+      "isBest": false,
+      "rank": 4
+    },
+    {
+      "id": "knn",
+      "name": "K-Nearest Neighbors (KNN)",
+      "type": "Instance-Based Similarity",
+      "description": "Distance-weighted nearest-neighbor classifier. Scores borrowers based on voting from 7 closest historical records.",
+      "strengths": [
+        "Non-parametric",
+        "Neighborhood clustering",
+        "No linearity assumption"
+      ],
+      "bestFor": "Peer-group loan benchmarking",
+      "accuracy": 0.8818,
+      "accuracyPercentage": "88.17%",
+      "rocAuc": 0.6275,
+      "precision": 0.3786,
+      "recall": 0.0423,
+      "f1Score": 0.0762,
+      "logLoss": 1.5314,
+      "latencyMs": 0.14,
+      "trainDurationSeconds": 0.08,
+      "confusionMatrix": {
+        "true_negatives": 7015,
+        "false_positives": 64,
+        "false_negatives": 882,
+        "true_positives": 39
+      },
+      "isBest": false,
+      "rank": 5
+    }
+  ]
+}

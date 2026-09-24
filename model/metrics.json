@@ -1,0 +1,115 @@
+{
+  "modelName": "LoanGuard-HistGradientBoosting-v1.0",
+  "algorithm": "Supervised HistGradientBoosting Pipeline (Ensemble Gradient Boosting)",
+  "datasetSize": "255,347 Records Benchmarked",
+  "testSplit": "20% Holdout Partition (51,070 Validation Samples)",
+  "evaluatedAt": "2026-09-23T17:53:18.610710+00:00",
+  "metrics": [
+    {
+      "key": "accuracy",
+      "label": "Accuracy",
+      "value": 0.8869,
+      "percentageText": "88.69%",
+      "description": "Overall proportion of correct loan default classifications.",
+      "benchmark": "Target: > 85.0%"
+    },
+    {
+      "key": "precision",
+      "label": "Precision",
+      "value": 0.619,
+      "percentageText": "61.9%",
+      "description": "Proportion of predicted defaults that were true defaults.",
+      "benchmark": "Target: > 80.0%"
+    },
+    {
+      "key": "recall",
+      "label": "Recall (Sensitivity)",
+      "value": 0.0671,
+      "percentageText": "6.7%",
+      "description": "Proportion of actual default cases correctly identified.",
+      "benchmark": "Target: > 78.0%"
+    },
+    {
+      "key": "f1",
+      "label": "F1 Score",
+      "value": 0.1211,
+      "percentageText": "12.1%",
+      "description": "Harmonic mean balancing precision and recall.",
+      "benchmark": "Target: > 80.0%"
+    },
+    {
+      "key": "roc_auc",
+      "label": "ROC-AUC Score",
+      "value": 0.7568,
+      "percentageText": "0.7568",
+      "description": "Discriminative ability between default and non-default classes.",
+      "benchmark": "Target: > 0.750"
+    },
+    {
+      "key": "log_loss",
+      "label": "Log-Loss Rate",
+      "value": 0.3116,
+      "percentageText": "0.3116",
+      "description": "Cross-entropy penalty for calibrated probabilistic predictions.",
+      "benchmark": "Target: < 0.350"
+    }
+  ],
+  "featureImportances": [
+    {
+      "feature": "Age",
+      "importance": 0.334,
+      "rank": 1
+    },
+    {
+      "feature": "InterestRate",
+      "importance": 0.22,
+      "rank": 2
+    },
+    {
+      "feature": "Income",
+      "importance": 0.131,
+      "rank": 3
+    },
+    {
+      "feature": "MonthsEmployed",
+      "importance": 0.102,
+      "rank": 4
+    },
+    {
+      "feature": "LoanAmount",
+      "importance": 0.101,
+      "rank": 5
+    },
+    {
+      "feature": "HasCoSigner",
+      "importance": 0.027,
+      "rank": 6
+    },
+    {
+      "feature": "EmploymentType",
+      "importance": 0.021,
+      "rank": 7
+    },
+    {
+      "feature": "HasDependents",
+      "importance": 0.018,
+      "rank": 8
+    },
+    {
+      "feature": "Education",
+      "importance": 0.01,
+      "rank": 9
+    },
+    {
+      "feature": "MaritalStatus",
+      "importance": 0.01,
+      "rank": 10
+    }
+  ],
+  "confusionMatrix": {
+    "true_negatives": 44894,
+    "false_positives": 245,
+    "false_negatives": 5533,
+    "true_positives": 398
+  }
+}
